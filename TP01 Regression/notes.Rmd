@@ -7,17 +7,20 @@ output: pdf_document
 
 # TP01 OMARJEE Abdoullatif
 
-l'objectif de ce TP est de se familiariser avec les outils de régression linéaire sur R. Ce compte rendu a été réalisé de sorte à pouvoir retourner sur les scripts R et de les rééxécuter à souhait , au besoin.
+l'objectif de ce TP est de se familiariser avec les outils de régression linéaire sur R.\
+Ce compte rendu a été réalisé de sorte à pouvoir retourner sur les scripts R et de les rééxécuter à souhait , au besoin.\
+De ce fait, la démultiplication des scripts R ont été volontairement choisies au profit de la lisibilité du markdown, de sorte à ce que le lecteur puisse se réapproprier le projet sans s'y perdre.\
 
 ## Exercice 1
 
-selon les informations prises sur [Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database) ce database consiste en une étude réalisée sur 768 femmes appartenantes à la communauté des Pima, réalisé par la [NIH](https://www.niddk.nih.gov/) . il y a 9 variables différentes décrivant l'état médical des sujets, la variable [pregnant]{.code} indiquant
+selon les informations prises sur [Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database) ce database consiste en une étude réalisée sur 768 femmes appartenantes à la communauté des Pima, réalisé par la [NIH](https://www.niddk.nih.gov/) .\
+il y a 9 variables différentes décrivant l'état médical des sujets, la variable [pregnant]{.code} indiquant le nombre de grossesses qu'a réalisé chaque sujet et les variables [glucose]{.code}, 
 
 ### question 1 :
 
 on remarque qu'il y a plusieurs valeurs anormales : par exemple, le [bmi]{.code} ( IMC ) ne peut pas être de 0 comme vu sur [données](données.R) .\
-on observe les mêmes problèmes concernant la variable [glucose]{.code} , [diastolic]{.code} , [insulin]{.code} , [triceps]{.code}, on a donc corrigé les données en stockant les résultats dans [pima]{.code}
+on observe les mêmes problèmes concernant la variable [glucose]{.code} , [diastolic]{.code} , [insulin]{.code} , [triceps]{.code}, on a donc corrigé les données en stockant les résultats dans [pima]{.code}\
 
 ### question 2 :
 
-on se sépare des données problématiques et on les stocke dans l'environnement sous le nom de [pima]{.code} , on a utilisé la commande [which]{.code} en conséquence.
+on se sépare des données problématiques et on les stocke dans l'environnement sous le nom de [pima]{.code} , on a utilisé la commande [which]{.code} en conséquence.\
