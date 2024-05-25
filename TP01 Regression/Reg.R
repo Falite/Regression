@@ -12,15 +12,7 @@ plot(regr)
 install.packages("car")
 
 #facteurs d'inflation de variance 
-vif(regr)
+library(knitr)
+library(kableExtra)
+kable(vif(regr))
 
-#question 2 : 
-regr2<-step(regr)
-
-#affichage
-graphics.off()
-par(mfrow=c(2,2))
-plot(regr2)
-
- #facteurs d'inflation de variance 
-vif(regr2)

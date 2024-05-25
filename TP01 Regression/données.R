@@ -5,7 +5,18 @@ install.packages("faraway") #on intalle le package
 library(faraway) #on charge la librairie
 
 graphics.off()
+
+#on observe les données
 summary(pima)
+pimanull<-pima[which(pima$bmi==0 | 
+                       pima$diastolic==0 |
+                       pima$triceps==0 |
+                       pima$glucose==0 |
+                       pima$insulin==0),]
+nrow(pimanull)
+nrow(pima)
+rm(pimanull)
+
 
 #Correction des données 
 pima1<- pima [-which(pima$bmi==0 | 

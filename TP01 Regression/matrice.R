@@ -1,2 +1,6 @@
+library(graphics)
+
 graphics.off()
-pairs(pima,col='blue')
+
+# matrice 2-2
+pairs(pima1,col=sample(colors(),ncol(pima1)))
