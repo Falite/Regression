@@ -2,7 +2,9 @@
 title: "notes"
 author: "OMARJEE Abdoullatif"
 date: "2024-05-23"
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
 ---
 
 # TP01 OMARJEE Abdoullatif
